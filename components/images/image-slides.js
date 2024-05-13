@@ -42,6 +42,7 @@ export default function ImageSlides() {
           src={image.image}
           className={index === currentImageIndex ? classes.active : ''}
           alt={image.alt}
+          priority
         />
       ))}
     </div>

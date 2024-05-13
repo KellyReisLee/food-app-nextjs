@@ -22,9 +22,10 @@
 }
 
 .headerText p {
-  font-size: 0.75rem;
+  font-size: 0.79rem;
   color: #cfa69b;
   font-style: italic;
+  padding-top: 0.2rem;
 }
 
 .meal h2,
