@@ -9,12 +9,11 @@ import { useFormState } from 'react-dom'
 export default function ShareMealPage() {
   const [state, formAction] = useFormState(shareMeal, { message: null })
   console.log(state.message);
-
   return (
     <>
       <header className={classes.header}>
         <h1>
-          Share your <span className={classes.highlight}>Favorite meal</span>
+          Share your <span className={classes.highlight}>favorite meal</span>
         </h1>
         <p>Or any other meal you feel needs sharing!</p>
       </header>
@@ -47,10 +46,7 @@ export default function ShareMealPage() {
               required
             ></textarea>
           </p>
-          <ImagePicker label='Your image' name='image' />
-          {
-            state.message && <p className={classes.error}>{state.message}</p>
-          }
+          <ImagePicker label="Your image" name="image" />
           <p className={classes.actions}>
             <MealsFormSubmit />
           </p>

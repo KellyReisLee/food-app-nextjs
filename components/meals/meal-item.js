@@ -1,11 +1,16 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
+import ButtonDelete from './button-delete'
 
 import classes from './meal-item.module.css';
 
-export default function MealItem({ title, slug, image, summary, creator }) {
+export default function MealItem({ title, slug, image, summary, creator, id }) {
+
+
   return (
     <article className={classes.meal}>
+
       <header>
         <div className={classes.image}>
           <Image src={image} alt={title} fill />
@@ -19,8 +24,10 @@ export default function MealItem({ title, slug, image, summary, creator }) {
         <p className={classes.summary}>{summary}</p>
         <div className={classes.actions}>
           <Link href={`/meals/${slug}`}>View Details</Link>
+          <ButtonDelete id={id} />
         </div>
       </div>
-    </article>
+
+    </article >
   );
 }
