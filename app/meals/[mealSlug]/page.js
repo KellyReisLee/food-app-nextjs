@@ -11,10 +11,8 @@ export default async function MealsDetails({ params }) {
   if (!meal) {
     notFound()
   }
-
   // Regular expression.
   meal.instructions = meal.instructions.replace(/\n/g, '<br />')
-
 
   return (
     <>

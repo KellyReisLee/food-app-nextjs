@@ -11,6 +11,8 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+
+
 .highlight {
   background: linear-gradient(90deg, #f9572a, #ff8a05);
   background-clip: text;
@@ -95,4 +97,12 @@
   background: #ccc;
   color: #979797;
   cursor: not-allowed;
+}
+
+
+.error {
+  padding: 1rem;
+  background-color: #f09319;
+  font-size: 1.1rem;
+  font-weight: 800;
 }

@@ -8,7 +8,7 @@ import MealsLoadingPage from './loading-out'
 
 async function Meals() {
   const meals = await getMeals()
-  console.log(meals);
+  //console.log(meals);
   return <MealsGrid meals={meals} />
 }
 

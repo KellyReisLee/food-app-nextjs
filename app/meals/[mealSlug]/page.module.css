@@ -21,7 +21,7 @@
 
 .headerText {
   padding: 0.5rem 1rem 0 1rem;
-  color: #c2bdb6;
+  color: #dfdbd6;
   max-width: 40rem;
   animation: fade-slide-in-from-right 1s ease-out forwards;
 }
@@ -63,7 +63,7 @@
 .instructions {
   font-size: 1.25rem;
   line-height: 1.5;
-  background-color: #c8c8c8;
+  background-color: #c9c9c9;
   color: #13120f;
   border-radius: 8px;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
